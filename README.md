@@ -1,2 +1,3 @@
 # Drift_Detection
-Detects data drift in text classification systems to ensure model reliability before making predictions.
+
+In this project, I worked on building a system that can detect data drift in a text classification model. I started by training a model using a training dataset, where I converted text into numerical form using TF-IDF and applied Logistic Regression. After confirming that the model performs well on known data, I introduced a new dataset to simulate real-world incoming data. Instead of directly using the model for prediction, I designed a mechanism to first check whether the new data is similar to the training data. For this, I used metrics like vocabulary overlap, cosine similarity, and model confidence. Based on these values, the system decides whether drift has occurred and warns if the model may not be reliable. This helped me understand how important it is to validate data before trusting model predictions in real-world applications.
